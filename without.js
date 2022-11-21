@@ -22,6 +22,8 @@ const assertArraysEqual = function(arr1, arr2) {
 /*
 - Take in a source array and a "itemsToRemove" array and return a new array with only those items from the source array
   that are not present in the other array.
+  - (how to) Remove an unwanted item in an array.
+  - (how?)   The source array should stay unchannged.
 */
 
 const without = function(source, itemsToRemove) {
@@ -33,10 +35,10 @@ const without = function(source, itemsToRemove) {
   }
 
   for (let i = 0; i < source.length; i++) {
-    for (let j = 0; j < itemsToRemove.length; j++) {
-      if (source[i] === itemsToRemove[j]) {
-        output.splice(i, 1);
-      }
+    //for (let j = 0; j < itemsToRemove.length; j++) {
+      //if (source[i] === itemsToRemove[j]) {
+    if (itemsToRemove.includes(source[i])) {  
+      output.splice(i, 1);
     }
   }
   return output;
