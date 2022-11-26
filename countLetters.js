@@ -11,7 +11,7 @@ const assertEqual = function(actual, expected) {
   - Start by define a fn.
   - Loop through all the characters in the string.
   - Increment the count of each character into "results".
-  - Add an "if" condition to only increment the count in "results" if the character is one of the 26 English letters.
+  - Add an "if" condition to ONLY increment the count in "results" if the character is one of the 26 English letters.
 */
 
 const countLetters = function(str) {
