@@ -19,11 +19,10 @@ const assertEqual = function(actual, expected) {
 const countOnly = function(allItems, itemsToCount) {
   const results = {};     //a bit confusing here. This results object will be changed and not a Constant, 
                           //why not use "let"???
-  
   for (const item of allItems) {
     //console.log(item);
-    if (itemsToCount[item]) {       //Since itemsToCount["Agouhanna"]===false, so, this line woks too.
     //if (itemsToCount[item] === true) {
+    if (itemsToCount[item]) {       //Since itemsToCount["Agouhanna"]===false, so, this line woks too.
       //if (item in results) {      //this way also works.
       if (results[item]) {
         results[item] += 1;
