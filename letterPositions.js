@@ -21,7 +21,7 @@ const assertArraysEqual = function(arr1, arr2) {
 
 /*
 - Take in a string and return all the indices (zero-based positions) in the string where each "letter" is found.
-  - Define the returned object structure.
+  - 🔺🔺🔺Define the returned object structure.
   - Write a test.
   - Loop over all the characters in the input.
   - Simply record all the indices in the input where each unique "characters" is found.
