@@ -44,3 +44,5 @@ const result3 = findKey(obj2, x => x.species === "cat");
 assertEqual(result3, "b");
 const result4 = findKey(obj2, x => x.species === "cow");
 assertEqual(result4, undefined);
+
+module.exports = findKey;

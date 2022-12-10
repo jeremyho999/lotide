@@ -39,3 +39,5 @@ const obj1 = {
 assertEqual(findKeyByValue(obj1, "hello"), "a");
 assertEqual(findKeyByValue(obj1, 42), "b");
 assertEqual(findKeyByValue(obj1, false), undefined);
+
+module.exports = findKeyByValue;

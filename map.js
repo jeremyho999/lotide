@@ -52,3 +52,5 @@ assertArraysEqual(results3, ["Vivi", "Kitty"])
 const trueFalseArray = [true, false, true, false];
 const results4 = map(trueFalseArray, bool => !bool);
 assertArraysEqual(results4, [false, true, false, true]);
+
+module.exports = map;
